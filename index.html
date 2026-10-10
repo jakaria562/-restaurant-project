@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Skyline Rooftop | Restaurant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#home" class="logo gold-gradient">
+      SKYLINE <span>ROOFTOP</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero " id="home">
+    <div class="hero-content">
+      <p class="eyebrow gold-gradient">DINING ABOVE THE ORDINARY</p>
+
+      <h1 class="">Meet Me <br>
+        <span>Above The City.</span>
+      </h1>
+
+      <p class="gold-gradient">
+        Experience unforgettable food, beautiful city views
+        and magical rooftop evenings.
+      </p>
+
+      <a href="#menu" class="btn">Explore Our Menu ↗</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="about-image"></div>
+
+    <div>
+      <p class="eyebrow gold-gradient">OUR STORY</p>
+      <h2>More Than A View.<br>
+        <span>It's A Feeling.</span>
+      </h2>
+
+      <p class="gold-gradient">
+         is a place to escape the everyday.
+        Enjoy delicious food, signature drinks and breathtaking
+        views of the city.
+      </p>
+
+      <a href="#reservation" class="text-link">
+        Reserve Your Table ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section menu-section" id="menu">
+    <div class="section-heading">
+      <p class="eyebrow gold-gradient">OUR SPECIALITIES</p>
+      <h2>A Taste Of <span>The Good Life.</span></h2>
+      <p class="gold-gradient">Discover some of our favourite dishes.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="starters">Starters</button>
+      <button class="filter-btn" data-filter="mains">Mains</button>
+      <button class="filter-btn" data-filter="drinks">Drinks</button>
+      <button class="filter-btn" data-filter="desserts">Desserts</button>
+    </div>
+
+    <div class="menu-grid">
+
+      <article class="food-card" data-category="starters">
+        <span class="image">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Fresh salad">
+        </span>
+        <div class="food-info">
+          <h3>Garden Glow Salad</h3>
+          <p>Fresh greens, citrus and feta cheese.</p>
+          <strong>৳ 480</strong>
+          <button class="add-btn" data-id="1">Add to Order +</button>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="mains">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80" alt="Grilled steak">
+        <div class="food-info">
+          <h3>Chargrilled Steak</h3>
+          <p>Grilled steak with seasonal vegetables.</p>
+          <strong>৳ 1,450</strong>
+          <button class="add-btn" data-id="2">Add to Order +</button>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="mains">
+        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80" alt="Pasta">
+        <div class="food-info">
+          <h3>Silky Alfredo Pasta</h3>
+          <p>Creamy pasta with parmesan and herbs.</p>
+          <strong>৳ 690</strong>
+          <button class="add-btn" data-id="3">Add to Order +</button>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="drinks">
+        <img src="https://images.unsplash.com/photo-1513558161293-cacf870e7cfc?auto=format&fit=crop&w=700&q=80" alt="Citrus mocktail">
+        <div class="food-info">
+          <h3>Golden Hour Spritz</h3>
+          <p>Orange, lime, mint and sparkling soda.</p>
+          <strong>৳ 320</strong>
+          <button class="add-btn" data-id="4">Add to Order +</button>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="starters">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="Soup">
+        <div class="food-info">
+          <h3>Roasted Pumpkin Soup</h3>
+          <p>Creamy pumpkin soup with fresh herbs.</p>
+          <strong>৳ 390</strong>
+          <button class="add-btn" data-id="5">Add to Order +</button>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="desserts">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate cake">
+        <div class="food-info">
+          <h3>Chocolate Cake</h3>
+          <p>Rich chocolate cake with vanilla cream.</p>
+          <strong>৳ 360</strong>
+          <button class="add-btn" data-id="6">Add to Order +</button>
+        </div>
+      </article>
+
+    </div>
+    <p class="disclaimer">Sample menu and prices for portfolio demonstration.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="section-heading">
+      <p class="eyebrow">OUR GALLERY</p>
+      <h2>Life Looks Better <span>From Here.</span></h2>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Restaurant interior">
+      <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80" alt="Dining tables">
+      <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=900&q=80" alt="Restaurant food">
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section class="section reservation-section" id="reservation">
+    <div class="section-heading">
+      <p class="eyebrow">YOUR EVENING, ELEVATED</p>
+      <h2>Book Your <span>Table.</span></h2>
+      <p>Make your next evening unforgettable.</p>
+    </div>
+
+    <form id="reservationForm">
+      <label>
+        Full Name
+        <input type="text" name="name" placeholder="Your name" required minlength="2">
+      </label>
+
+      <label>
+        Phone Number
+        <input type="tel" name="phone" placeholder="Your phone number" required>
+      </label>
+
+      <div class="form-row">
+        <label>
+          Date
+          <input type="date" id="bookingDate" name="date" required>
+        </label>
+
+        <label>
+          Time
+          <select name="time" required>
+            <option value="">Select time</option>
+            <option>4:00 PM</option>
+            <option>5:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
+            <option>8:00 PM</option>
+            <option>9:00 PM</option>
+            <option>10:00 PM</option>
+          </select>
+        </label>
+      </div>
+
+      <label>
+        Number of Guests
+        <select name="guests">
+          <option>1</option>
+          <option selected>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7+</option>
+        </select>
+      </label>
+
+      <label>
+        Special Request
+        <textarea name="message" placeholder="Birthday, anniversary, etc."></textarea>
+      </label>
+
+      <button type="submit" class="btn submit-btn">
+        Request Reservation ↗
+      </button>
+
+      <p id="formMessage" aria-live="polite"></p>
+      <small class="disclaimer">
+        Demo only: no real reservation is sent.
+      </small>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <p class="eyebrow">COME FIND US</p>
+    <h2>Meet Us <span>Up Top.</span></h2>
+
+    <div class="contact-grid">
+      <div>
+        <h3>Our Address</h3>
+        <p>Gulshan Avenue, Dhaka, Bangladesh</p>
+      </div>
+
+      <div>
+        <h3>Opening Hours</h3>
+        <p>Every day · 4 PM – 12 AM</p>
+      </div>
+
+      <div>
+        <h3>Call Us</h3>
+        <p><a href="tel:+8801700123456">+880 1700-123456</a></p>
+      </div>
+    </div>
+
+    <a class="text-link" target="_blank" rel="noreferrer"
+       href="https://maps.google.com/?q=Gulshan+Dhaka+Bangladesh">
+      Find Us on Maps ↗
+    </a>
+    <p class="disclaimer">Sample contact details — replace with real information.</p>
+  </section>
+
+  <!-- Cart -->
+  <aside class="cart-bar" id="cartBar" hidden>
+    <div>
+      <strong id="cartCount">0 items</strong>
+      <p id="cartTotal">৳ 0</p>
+    </div>
+    <button id="viewCart" class="btn">View Order</button>
+  </aside>
+
+  <dialog id="cartDialog">
+    <div class="cart-dialog-heading">
+      <h2>Your Order</h2>
+      <button id="closeCart" class="close-btn" aria-label="Close">×</button>
+    </div>
+    <div id="cartItems"></div>
+    <p class="cart-total-line">Total: <strong id="dialogTotal">৳ 0</strong></p>
+    <button id="checkoutBtn" class="btn">Continue (Demo)</button>
+    <p class="disclaimer">Online ordering is not connected.</p>
+  </dialog>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#home" class="logo">SKYLINE <span>ROOFTOP</span></a>
+    <p>Good food. Golden hour. City lights.</p>
+    <small>© <span id="year"></span> Skyline Rooftop · Portfolio Demo</small>
+  </footer>
+
+</body>
+</html>
